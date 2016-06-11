@@ -19,9 +19,16 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         // Configure scene view
-        sceneView.showsFPS = true
-        sceneView.showsNodeCount = true
-        sceneView.showsDrawCount = true
+//        sceneView.showsFPS = true
+//        sceneView.showsNodeCount = true
+//        sceneView.showsDrawCount = true
+
+        // Present initial scene
+        guard let flyScene = FlyScene(fileNamed: "FlyScene") else {
+            return
+        }
+        flyScene.size = self.view.bounds.size
+        sceneView.presentScene(flyScene)
     
     }
 

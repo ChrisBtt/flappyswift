@@ -8,22 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		873BE29B1D06195B00A69FF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873BE29A1D06195B00A69FF5 /* AppDelegate.swift */; };
+		873BE29D1D06195B00A69FF5 /* FlyScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 873BE29C1D06195B00A69FF5 /* FlyScene.sks */; };
+		873BE29F1D06195B00A69FF5 /* FlyScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873BE29E1D06195B00A69FF5 /* FlyScene.swift */; };
 		873BE2A11D06195B00A69FF5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873BE2A01D06195B00A69FF5 /* ViewController.swift */; };
 		873BE2A41D06195B00A69FF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873BE2A21D06195B00A69FF5 /* Main.storyboard */; };
 		873BE2A61D06195B00A69FF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 873BE2A51D06195B00A69FF5 /* Assets.xcassets */; };
 		873BE2A91D06195B00A69FF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873BE2A71D06195B00A69FF5 /* LaunchScreen.storyboard */; };
 		87AA11DC1D0B4D6E006C614F /* bird.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 87AA11DB1D0B4D6E006C614F /* bird.atlas */; };
+		87AA11DF1D0C316A006C614F /* ScoreParticles.sks in Resources */ = {isa = PBXBuildFile; fileRef = 87AA11DD1D0C316A006C614F /* ScoreParticles.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		873BE2971D06195B00A69FF5 /* FlappySwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlappySwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		873BE29A1D06195B00A69FF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		873BE29C1D06195B00A69FF5 /* FlyScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FlyScene.sks; sourceTree = "<group>"; };
+		873BE29E1D06195B00A69FF5 /* FlyScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyScene.swift; sourceTree = "<group>"; };
 		873BE2A01D06195B00A69FF5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		873BE2A31D06195B00A69FF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		873BE2A51D06195B00A69FF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		873BE2A81D06195B00A69FF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873BE2AA1D06195B00A69FF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87AA11DB1D0B4D6E006C614F /* bird.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = bird.atlas; sourceTree = "<group>"; };
+		87AA11DD1D0C316A006C614F /* ScoreParticles.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ScoreParticles.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,11 +65,22 @@
 				873BE29A1D06195B00A69FF5 /* AppDelegate.swift */,
 				873BE2A21D06195B00A69FF5 /* Main.storyboard */,
 				873BE2A01D06195B00A69FF5 /* ViewController.swift */,
+				873BE2B01D061D4000A69FF5 /* Fly Scene */,
 				873BE2A51D06195B00A69FF5 /* Assets.xcassets */,
 				87AA11DB1D0B4D6E006C614F /* bird.atlas */,
 				873BE2B11D061D5200A69FF5 /* Supporting Files */,
 			);
 			path = FlappySwift;
+			sourceTree = "<group>";
+		};
+		873BE2B01D061D4000A69FF5 /* Fly Scene */ = {
+			isa = PBXGroup;
+			children = (
+				873BE29C1D06195B00A69FF5 /* FlyScene.sks */,
+				873BE29E1D06195B00A69FF5 /* FlyScene.swift */,
+				87AA11DD1D0C316A006C614F /* ScoreParticles.sks */,
+			);
+			name = "Fly Scene";
 			sourceTree = "<group>";
 		};
 		873BE2B11D061D5200A69FF5 /* Supporting Files */ = {
@@ -133,9 +150,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				873BE29D1D06195B00A69FF5 /* FlyScene.sks in Resources */,
 				873BE2A91D06195B00A69FF5 /* LaunchScreen.storyboard in Resources */,
 				873BE2A61D06195B00A69FF5 /* Assets.xcassets in Resources */,
 				87AA11DC1D0B4D6E006C614F /* bird.atlas in Resources */,
+				87AA11DF1D0C316A006C614F /* ScoreParticles.sks in Resources */,
 				873BE2A41D06195B00A69FF5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,6 +166,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				873BE29F1D06195B00A69FF5 /* FlyScene.swift in Sources */,
 				873BE2A11D06195B00A69FF5 /* ViewController.swift in Sources */,
 				873BE29B1D06195B00A69FF5 /* AppDelegate.swift in Sources */,
 			);
